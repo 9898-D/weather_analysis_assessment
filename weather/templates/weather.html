@@ -1,0 +1,13 @@
+<h1>Weather in {{ weather.city }}</h1>
+<p>Temperature: {{ weather.temperature }}°C</p>
+<p>Feels Like: {{ weather.feels_like }}°C</p>
+<p>Humidity: {{ weather.humidity }}%</p>
+<p>Condition: {{ weather.condition }}</p>
+<p>Wind Speed: {{ weather.wind_speed }} kph</p>
+<p>Pressure: {{ weather.pressure }} mb</p>
+<p>Visibility: {{ weather.visibility }} km</p>
+<p>UV Index: {{ weather.uv_index }}</p>
+<p>Average Temperature (Last 24 Hours): {{ avg_temp }}°C</p>
+{% if is_extreme %}
+    <p style="color: red;">Extreme Weather Alert!</p>
+{% endif %}
